@@ -1,5 +1,5 @@
-import Providers from "./providers"
 import { fontsClassName } from "@/styles/fonts"
+import Providers from "@/app/providers"
 import "@/styles/globals.css"
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
