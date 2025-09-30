@@ -11,11 +11,11 @@ export default function Providers({ children }: { children: React.ReactNode }) {
   const router = useRouter()
   return (
     <ClerkProvider>
-      <QueryClientProvider client={queryClient}>
-        <NextThemeProvider attribute="class">
+      <NextThemeProvider attribute="class" enableSystem>
+        <QueryClientProvider client={queryClient}>
           <RouterProvider navigate={router.push}>{children}</RouterProvider>
-        </NextThemeProvider>
-      </QueryClientProvider>
+        </QueryClientProvider>
+      </NextThemeProvider>
     </ClerkProvider>
   )
 }
